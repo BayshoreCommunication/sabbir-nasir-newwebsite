@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+p {
+  @apply text-[15px] md:text-[20px] text-charcoal-black font-normal font-acumin leading-relaxed;
+}
+
+h2 {
+  @apply text-[24px] md:text-[35px] text-deep-indigo font-semibold font-baskervville;
+}
+
+h3 {
+  @apply text-[20px] md:text-[24px] text-deep-indigo font-medium font-baskervville;
+}
