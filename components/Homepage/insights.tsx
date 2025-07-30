@@ -1,46 +1,8 @@
 "use client";
 
+import { insightsData } from "@/config/data";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import insight1 from "../../public/images/homepage/blog1.png";
-import insight2 from "../../public/images/homepage/blog2.png";
-import insight3 from "../../public/images/homepage/blog3.png";
-
-const insightsData = [
-  {
-    id: 1,
-    date: "30",
-    month: "Nov",
-    year: "2021",
-    image: insight1.src,
-    title: "New technology awarness.",
-    description:
-      "Delightful remarkably mr on announcing themselves entreaties favourable.",
-    link: "#",
-  },
-  {
-    id: 2,
-    date: "01",
-    month: "Dec",
-    year: "2021",
-    image: insight2.src,
-    title: "Client meeting discussion.",
-    description:
-      "About to in so terms voice at. Equal an would is found seems of. The particular f...",
-    link: "#",
-  },
-  {
-    id: 3,
-    date: "04",
-    month: "Dec",
-    year: "2021",
-    image: insight3.src,
-    title: "Fast growth for business",
-    description:
-      "At more shed went up is roof if loud case. Delay music in lived noise an. Beyond ge...",
-    link: "#",
-  },
-];
 
 const cardVariants = {
   hidden: { opacity: 0, y: 40 },

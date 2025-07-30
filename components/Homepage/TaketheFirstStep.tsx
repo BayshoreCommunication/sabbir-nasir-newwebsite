@@ -37,14 +37,18 @@ const TaketheFirstStep = ({ title }: { title: string }) => {
           Let’s start this journey together.
         </p>
 
-        <div className="mt-6">
+        <motion.div
+          className="mt-6"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
           <Link
             href="/contact-us"
             className="inline-flex items-center justify-center bg-primary text-white px-6 py-3 rounded-[10px] text-base font-semibold transition duration-300 hover:bg-primary/80 shadow-sm hover:shadow-md"
           >
             SCHEDULE A CALL
           </Link>
-        </div>
+        </motion.div>
       </motion.div>
     </section>
   );

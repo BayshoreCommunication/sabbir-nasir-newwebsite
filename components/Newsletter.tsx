@@ -179,7 +179,7 @@ const Newsletter = () => {
           ) : (
             <button
               type="submit"
-              className="w-full bg-primary text-white px-6 py-3 rounded-full text-base font-semibold transition-all duration-300 shadow-sm hover:shadow-md hover:bg-secondary transform hover:scale-105 active:scale-95"
+              className="w-full bg-primary text-white px-6 py-3 rounded-full text-base font-semibold transition-all duration-300 shadow-sm hover:shadow-md hover:bg-primary/80 transform hover:scale-105 active:scale-95"
             >
               SUBSCRIBE
             </button>
