@@ -35,7 +35,7 @@ const NewsSidebar = () => {
             viewport={{ once: true }}
           >
             <Image
-              src="/images/about-us/sabbir-nasir.png"
+              src="/images/about-us/image 28 (1).png"
               alt="Sabbir Hasan Nasir"
               fill
               className="object-cover rounded-full image-right"
@@ -48,16 +48,16 @@ const NewsSidebar = () => {
             transition={{ duration: 0.4, delay: 0.3 }}
             viewport={{ once: true }}
           >
-            Sabbir Hasan Nasir
+            Sabbir Nasir
           </motion.h3>
           <motion.p
-            className="text-base"
+            className="text-base text-primary"
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            Author & Business Leader
+            Owner and Founder
           </motion.p>
         </div>
 

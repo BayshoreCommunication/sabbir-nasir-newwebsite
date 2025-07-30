@@ -38,7 +38,7 @@ const NewsGrid = () => {
           >
             {/* Image Container */}
             <motion.div
-              className="relative h-48 overflow-hidden"
+              className="relative h-64 overflow-hidden"
               initial={{ scale: 1.1 }}
               whileInView={{ scale: 1 }}
               transition={{
@@ -96,7 +96,7 @@ const NewsGrid = () => {
                 {insight.title}
               </motion.h3>
               <motion.p
-                className="line-clamp-6 mt-2"
+                className="line-clamp-3 mt-2"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{
