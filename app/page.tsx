@@ -1,4 +1,4 @@
-import BusinessTransformationConsulting from "@/components/HeroSection/BusinessTransformationConsulting";
+import BusinessTransformationConsulting from "@/components/Homepage/BusinessTransformationConsulting";
 import HeroSection from "@/components/Homepage/HeroSection";
 import Insights from "@/components/Homepage/insights";
 import TaketheFirstStep from "@/components/Homepage/TaketheFirstStep";

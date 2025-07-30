@@ -109,15 +109,15 @@ const BusinessTransformationConsulting = () => {
 
         <Link
           href={"/our-framework"}
-          className="mt-12 inline-flex items-center space-x-1 text-primary hover:underline"
+          className="mt-8 xl:mt-12 inline-flex items-center space-x-1 text-primary hover:underline"
         >
           <p className="text-[45px] font-lumios text-primary">Our Framework</p>
           <div>
-            <HiArrowNarrowRight className="text-3xl font-lumios mt-2 text-primary" />
+            <HiArrowNarrowRight className="text-2xl xl:text-3xl font-lumios mt-1 xl:mt-2 text-primary" />
           </div>
         </Link>
 
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 mt-6">
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-4 xl:gap-8 mt-2 xl:mt-6">
           <motion.div
             className="w-full lg:w-1/1"
             initial={{ opacity: 0, x: -30 }}
@@ -163,13 +163,15 @@ const BusinessTransformationConsulting = () => {
           href={"/who-we-serve"}
           className="mt-12 inline-flex items-center space-x-1 text-primary hover:underline"
         >
-          <p className="text-[45px] font-lumios text-primary">Who We Serve</p>
+          <p className="text-[38px] xl:text-[45px] font-lumios text-primary">
+            Who We Serve
+          </p>
           <div>
-            <HiArrowNarrowRight className="text-3xl font-lumios mt-2 text-primary" />
+            <HiArrowNarrowRight className="text-2xl xl:text-3xl font-lumios mt-1 xl:mt-2 text-primary" />
           </div>
         </Link>
 
-        <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-8 mt-6">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-4 xl:gap-8 mt-2 xl:mt-6">
           <motion.div
             className="w-full lg:w-1/3 flex justify-center items-center"
             initial={{ opacity: 0, scale: 0.9 }}
@@ -194,9 +196,7 @@ const BusinessTransformationConsulting = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            <h1 className="text-h2 font-baskervville text-[#3E3A5B] text-right">
-              From Stagnation to Scale
-            </h1>
+            <h2 className="text-right">Who We Are</h2>
             <p className=" mt-4 text-right">
               We partner with founders, senior executives, and investors whose
               successful companies have plateaued and require
@@ -218,9 +218,9 @@ const BusinessTransformationConsulting = () => {
                 className="mt-6 inline-flex items-center justify-end space-x-1 text-primary hover:underline"
               >
                 <div>
-                  <HiArrowNarrowRight className="text-3xl font-lumios mt-2 rotate-180" />
+                  <HiArrowNarrowRight className="text-2xl xl:text-3xl font-lumios mt-1 xl:mt-2 rotate-180" />
                 </div>
-                <p className="text-[45px] font-lumios text-primary">
+                <p className="text-[30px] xl:text-[45px] font-lumios text-primary">
                   Our Story
                 </p>
               </Link>

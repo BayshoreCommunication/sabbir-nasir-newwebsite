@@ -33,11 +33,11 @@ const config: Config = {
           "2xl": "1536px",
         },
       },
-      colors: {
-        "deep-indigo": "#2C3E50",
-        "charcoal-black": "#2E2E2E",
-        "charcoal-black-60": "rgba(46, 46, 46, 0.6)",
-      },
+      // colors: {
+      //   "deep-indigo": "#2C3E50",
+      //   "charcoal-black": "#2E2E2E",
+      //   "charcoal-black-60": "rgba(46, 46, 46, 0.6)",
+      // },
       // backgroundImage: {
       //   "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
       //   "gradient-conic":
@@ -50,10 +50,10 @@ const config: Config = {
       themes: {
         light: {
           colors: {
-            primary: "#B65D38", // primary-one
-            secondary: "#7CA4A9", // primary-two
-            background: "#D9CDBF", // secondary-one
-            foreground: "#EBEAE8", // secondary-two
+            primary: "#FA8072", // primary-one
+            secondary: "#BBD8DB", // primary-two
+            background: "#FFFFFF", // secondary-one
+            foreground: "#FFF4ED", // secondary-two
           },
         },
       },

@@ -3,13 +3,17 @@
 @tailwind utilities;
 
 p {
-  @apply text-[15px] md:text-[20px] text-charcoal-black font-normal font-acumin leading-relaxed;
+  @apply text-[15px] md:text-[20px] text-[#1F1F1F] font-normal font-acumin leading-relaxed;
+}
+
+h1 {
+  @apply text-[32px] md:text-[40px] xl:text-[45px] 2xl:text-[55px] font-bold font-baskervville  leading-tight text-[#1F1F1F];
 }
 
 h2 {
-  @apply text-[24px] md:text-[35px] text-deep-indigo font-semibold font-baskervville;
+  @apply text-[24px] md:text-[35px] text-[#1F1F1F] font-semibold font-baskervville;
 }
 
 h3 {
-  @apply text-[20px] md:text-[24px] text-deep-indigo font-medium font-baskervville;
+  @apply text-[20px] md:text-[24px] text-[#1F1F1F] font-medium font-baskervville;
 }
