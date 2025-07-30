@@ -1,13 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { FiDownload } from "react-icons/fi";
 
 const OurFramworkSection = () => {
   return (
     <div className="my-10 md:my-20  container mx-auto">
       {" "}
       {/* Transformation Framework Section */}
-      <section className="text-center space-y-8">
+      <section className="text-center ">
         {/* Main Title */}
         <motion.h2
           className="text-center "
@@ -21,7 +22,7 @@ const OurFramworkSection = () => {
 
         {/* Description */}
         <motion.p
-          className="leading-relaxed text-left"
+          className="leading-relaxed text-left mt-3 xl:mt-5"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
@@ -38,20 +39,16 @@ const OurFramworkSection = () => {
 
         {/* Download Button */}
         <motion.div
-          className="flex items-center md:justify-start justify-center pb-5  space-x-2 text-primary  cursor-pointer hover:text-secondary transition-colors"
+          className="group flex items-center justify-center xl:justify-start mt-4 xl:mt-4 pb-4 xl:pb-4 space-x-2 text-primary cursor-pointer hover:text-secondary transition-colors w-[400px]"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
           viewport={{ once: true }}
         >
-          <svg className="w-10 h-10" fill="currentColor" viewBox="0 0 20 20">
-            <path
-              fillRule="evenodd"
-              d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
-              clipRule="evenodd"
-            />
-          </svg>
-          <span className="text-[40px] font-lumios">
+          <div>
+            <FiDownload className="text-2xl xl:text-3xl font-lumios text-primary group-hover:text-secondary transition-colors" />
+          </div>
+          <span className="text-[30px] xl:text-[40px] font-lumios group-hover:text-secondary transition-colors">
             Download The Framework
           </span>
         </motion.div>
@@ -121,9 +118,7 @@ const OurFramworkSection = () => {
                 <span className="text-primary font-bold text-lg">2</span>
               </div>
               <div className="flex-1">
-                <h3 className="text-xl font-semibold text-[#141212] mb-3 font-baskervville">
-                  Articulate
-                </h3>
+                <h3 className="">Articulate</h3>
                 <p className="">
                   Now, we begin to articulate a clear vision, define and
                   prioritize values, and perform SWOT (strengths, weaknesses,

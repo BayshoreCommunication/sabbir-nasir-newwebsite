@@ -161,12 +161,12 @@ const Navbar: React.FC = () => {
             whileTap={{ scale: 0.95 }}
             className="mt-2"
           >
-            <a
-              href="tel:+1234567890"
+            <Link
+              href="/contact-us"
               className="bg-primary hover:bg-primary/80 rounded p-1 inline-block"
             >
               <IoMdCall className="text-xl text-white" />
-            </a>
+            </Link>
           </motion.div>
 
           <motion.button
@@ -254,8 +254,6 @@ const Navbar: React.FC = () => {
                     )}
                     onClick={() => {
                       setIsMenuOpen(false);
-                      // Force immediate navigation
-                      window.location.href = item.slug;
                     }}
                   >
                     {item.title}

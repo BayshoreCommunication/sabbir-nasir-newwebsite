@@ -5,33 +5,27 @@ import { useState } from "react";
 import Swal from "sweetalert2";
 
 interface ContactFormState {
-  fullName: string;
+  firstName: string;
   lastName: string;
   phone: string;
-  zipCode: string;
   email: string;
-  subject: string;
   message: string;
 }
 
 interface ContactFormErrors {
-  fullName?: string;
+  firstName?: string;
   lastName?: string;
   phone?: string;
-  zipCode?: string;
   email?: string;
-  subject?: string;
   message?: string;
 }
 
 const ContactForm = () => {
   const [emailForm, setEmailForm] = useState<ContactFormState>({
-    fullName: "",
+    firstName: "",
     lastName: "",
     phone: "",
-    zipCode: "",
     email: "",
-    subject: "",
     message: "",
   });
 
@@ -41,8 +35,8 @@ const ContactForm = () => {
   const validate = (values: ContactFormState): ContactFormErrors => {
     const errors: ContactFormErrors = {};
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
-    if (!values.fullName) {
-      errors.fullName = "First name is required!";
+    if (!values.firstName) {
+      errors.firstName = "First name is required!";
     }
     if (!values.lastName) {
       errors.lastName = "Last name is required!";
@@ -55,12 +49,7 @@ const ContactForm = () => {
     if (!values.phone) {
       errors.phone = "Phone number is required!";
     }
-    if (!values.zipCode) {
-      errors.zipCode = "Zip code is required!";
-    }
-    if (!values.subject) {
-      errors.subject = "Subject is required!";
-    }
+
     if (!values.message) {
       errors.message = "Message is required!";
     }
@@ -74,10 +63,10 @@ const ContactForm = () => {
     setFormErrors(errors);
     if (Object.keys(errors).length === 0) {
       send(
-        "service_wj7yeey",
-        "template_u7df4l3rr",
+        "service_hp972gm",
+        "template_tn5u16m",
         emailForm as unknown as Record<string, unknown>,
-        "2kczyCyop9k9pMsa-"
+        "2WHr6-vL3VIe9C4Nv"
       )
         .then((response) => {
           setLoading(false);
@@ -87,12 +76,10 @@ const ContactForm = () => {
             confirmButtonColor: "#131b2a",
           }).then(() => {
             setEmailForm({
-              fullName: "",
+              firstName: "",
               lastName: "",
               phone: "",
-              zipCode: "",
               email: "",
-              subject: "",
               message: "",
             });
           });
@@ -104,12 +91,10 @@ const ContactForm = () => {
             text: "Something went wrong!",
           }).then(() => {
             setEmailForm({
-              fullName: "",
+              firstName: "",
               lastName: "",
               phone: "",
-              zipCode: "",
               email: "",
-              subject: "",
               message: "",
             });
             setLoading(false);
@@ -132,16 +117,16 @@ const ContactForm = () => {
               placeholder=""
               required
               type="text"
-              name="fullName"
-              value={emailForm.fullName}
+              name="firstName"
+              value={emailForm.firstName}
               onChange={(event) => {
                 setEmailForm({
                   ...emailForm,
-                  fullName: event.target.value,
+                  firstName: event.target.value,
                 });
               }}
             />
-            <span className="text-red-500">{formErrors.fullName}</span>
+            <span className="text-red-500">{formErrors.firstName}</span>
           </div>
         </div>
         <div className="mb-5 w-full">
@@ -233,7 +218,7 @@ const ContactForm = () => {
         {loading ? (
           <button
             type="submit"
-            className="bg-primary text-white px-6 py-2.5 rounded-xl text-base hover:bg-secondary transition duration-300 shadow-sm hover:shadow-md font-open-sans uppercase cursor-pointer w-full"
+            className="bg-primary text-white px-6 py-2.5 rounded-xl text-base hover:bg-secondary transition duration-300 shadow-sm hover:shadow-md font-open-sans uppercase cursor-pointer w-full flex items-center justify-center gap-2"
             disabled
           >
             <div role="status">

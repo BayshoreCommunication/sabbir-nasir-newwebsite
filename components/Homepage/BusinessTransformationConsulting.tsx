@@ -73,7 +73,7 @@ const BusinessTransformationConsulting = () => {
               className="flex items-center space-x-4 last:mb-0 bg-secondary px-4 py-6 rounded-xl hover:shadow-lg transition-shadow duration-300"
             >
               <div className="flex-shrink-0">{step.icon}</div>
-              <p className=" text-white">{step.title}</p>
+              <p className="">{step.title}</p>
             </motion.div>
           ))}
         </motion.div>
@@ -109,15 +109,17 @@ const BusinessTransformationConsulting = () => {
 
         <Link
           href={"/our-framework"}
-          className="mt-8 xl:mt-12 inline-flex items-center space-x-1 text-primary hover:underline"
+          className="mt-2 xl:mt-6 inline-flex items-center space-x-1 text-primary hover:underline"
         >
-          <p className="text-[45px] font-lumios text-primary">Our Framework</p>
+          <p className="text-[30px] xl:text-[45px] font-lumios text-primary">
+            Our Framework
+          </p>
           <div>
             <HiArrowNarrowRight className="text-2xl xl:text-3xl font-lumios mt-1 xl:mt-2 text-primary" />
           </div>
         </Link>
 
-        <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-4 xl:gap-8 mt-2 xl:mt-6">
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-2 xl:gap-8 -mt-1 xl:-mt-8">
           <motion.div
             className="w-full lg:w-1/1"
             initial={{ opacity: 0, x: -30 }}
@@ -161,9 +163,9 @@ const BusinessTransformationConsulting = () => {
 
         <Link
           href={"/who-we-serve"}
-          className="mt-12 inline-flex items-center space-x-1 text-primary hover:underline"
+          className="mt-2 xl:-mt-6 inline-flex items-center space-x-1 text-primary hover:underline"
         >
-          <p className="text-[38px] xl:text-[45px] font-lumios text-primary">
+          <p className="text-[30px] xl:text-[45px] font-lumios text-primary">
             Who We Serve
           </p>
           <div>
@@ -198,24 +200,23 @@ const BusinessTransformationConsulting = () => {
           >
             <h2 className="text-right">Who We Are</h2>
             <p className=" mt-4 text-right">
-              We partner with founders, senior executives, and investors whose
-              successful companies have plateaued and require
+              Sabbir Nasir has spent nearly three decades leading the
+              transformations of multinational and private companies{" "}
               <span className="text-primary italic">
-                transformation to scale and thrive.
-              </span>
-              While Sabbir Nassir has significant experience transforming
-              businesses in retail, manufacturing, and private equity, the
-              SabbirNasir Transformation Framework can be applied to
-              organizations in virtually any industry, anywhere in the world to
-              <span className="text-primary italic">
-                maximize performance and profitability.
-              </span>
+                – not by simply advising, but by understanding and doing.
+              </span>{" "}
+              His approach is heavily influenced by his own spiritual journey
+              that taught him invaluable lessons about presence and
+              self-awareness. With Sabbir’s guidance, you’ll move forward with
+              clarity, scale with confidence, and achieve sustainable growth and
+              success. We partner with founders, senior executives, and
+              investors whose successful companies have plateaued and require
             </p>
             <div className="flex justify-end">
               {" "}
               <Link
                 href={"/about-us"}
-                className="mt-6 inline-flex items-center justify-end space-x-1 text-primary hover:underline"
+                className="mt-2 inline-flex items-center justify-end space-x-1 text-primary hover:underline"
               >
                 <div>
                   <HiArrowNarrowRight className="text-2xl xl:text-3xl font-lumios mt-1 xl:mt-2 rotate-180" />

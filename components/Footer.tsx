@@ -6,6 +6,7 @@ import { FaFacebook } from "react-icons/fa6";
 import { PiInstagramLogoFill } from "react-icons/pi";
 
 import { FaYoutube } from "react-icons/fa6";
+import Newsletter from "./Newsletter";
 
 const Footer = () => {
   return (
@@ -82,35 +83,7 @@ const Footer = () => {
             </div>
 
             {/* Newsletter */}
-            <div className="lg:col-span-2 col-span-1 w-full mt-0 md:-mt-10">
-              <div className="bg-foreground rounded-2xl shadow-md p-6 md:p-8 space-y-5">
-                <h3 className="">
-                  Our <span className="text-[#2C2C2C]">Newsletter</span>
-                </h3>
-                <p className=" leading-relaxed">
-                  Stay informed with the latest insights, strategies, updates
-                  and receive expert tips from Team Sabbir Nasir to your inbox.
-                </p>
-                <form className="space-y-4">
-                  <input
-                    type="text"
-                    placeholder="Your Name"
-                    className="w-full px-4 py-3 rounded-full bg-white text-sm placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary"
-                  />
-                  <input
-                    type="email"
-                    placeholder="Email Address"
-                    className="w-full px-4 py-3 rounded-full bg-white text-sm placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary"
-                  />
-                  <button
-                    type="submit"
-                    className="w-full text-primary font-semibold border border-primary rounded-full py-2.5 hover:bg-primary hover:text-white transition duration-300"
-                  >
-                    SUBSCRIBE
-                  </button>
-                </form>
-              </div>
-            </div>
+            <Newsletter />
 
             <div className="lg:hidden flex gap-4 mt-4 justify-center md:justify-start">
               {[
@@ -119,7 +92,7 @@ const Footer = () => {
                   icon: <FaFacebook className="text-[20px]" />,
                 },
                 {
-                  href: "https://www.linkedin.com/teamsabbirnasir",
+                  href: "https://www.linkedin.com/sabbir-nasir-associates",
                   icon: <FaLinkedin className="text-[20px]" />,
                 },
                 {
@@ -127,7 +100,7 @@ const Footer = () => {
                   icon: <PiInstagramLogoFill className="text-[20px]" />,
                 },
                 {
-                  href: "https://www.youtube.com/teamsabbirnasir",
+                  href: "https://www.youtube.com/@TeamSabbir_Nasir",
                   icon: <FaYoutube className="text-[20px]" />,
                 },
               ].map((item, i) => (

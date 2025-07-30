@@ -57,9 +57,9 @@ const cardVariants = {
 
 export default function Insights() {
   return (
-    <section className="container my-10 md:my-20 mx-auto px-4">
-      <div className="text-center mb-12">
-        <h1 className="text-h2 font-baskervville text-[#3E3A5B]">Blogs</h1>
+    <section className="container my-8 md:my-20 mx-auto px-4">
+      <div className="text-center mb-4 xl:mb-8">
+        <h2 className="">Blogs</h2>
         <p className="mt-5 max-w-[700px] mx-auto ">
           Insights You’ve hit a wall. Your passion, talent, and energy drove
           your company’s early success, but you’re caught in what we call the
