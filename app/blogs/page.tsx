@@ -9,7 +9,7 @@ const page = () => {
         titleH1={`Blogs`}
         titleH2={"Blog"}
         slug={"blogs"}
-        image="/images/about-us/Frame 72.jpg"
+        image="/images/about-us/blog.jpg"
       />
       <InsightsGrid />
       <TaketheFirstStep />

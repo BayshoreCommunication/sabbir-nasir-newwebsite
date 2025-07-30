@@ -14,7 +14,7 @@ export default function page() {
         }
         titleH2={"Our Framework"}
         slug={"our-framework"}
-        image="/images/about-us/Sabbir nasir website Images.pngd.jpg"
+        image="/images/about-us/framework.jpg"
       />
 
       <OurFramworkSection />

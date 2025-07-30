@@ -10,7 +10,7 @@ const page = () => {
         titleH1="About Us"
         titleH2={"About Us"}
         slug={"aboutus"}
-        image="/images/about-us/about-sabbir-nassir.jpg"
+        image="/images/about-us/about-us.jpg"
       />
       <AboutSection />
       <TaketheFirstStep />

@@ -8,7 +8,7 @@ const page = () => {
         titleH1={`News`}
         titleH2={"News"}
         slug={"news"}
-        image="/images/about-us/Frame 69.jpg"
+        image="/images/about-us/news.jpg"
       />
       <div className="py-96"></div>
       <TaketheFirstStep />

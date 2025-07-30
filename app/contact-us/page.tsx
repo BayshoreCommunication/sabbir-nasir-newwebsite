@@ -9,7 +9,7 @@ const page = () => {
         titleH1={`Contact Us`}
         titleH2={"Contact Us"}
         slug={"contact-us"}
-        image="/images/about-us/Frame 72.jpg"
+        image="/images/about-us/contact-us.jpg"
       />
       <div className="container mx-auto mt-14">
         <div className="flex flex-col md:flex-row gap-10 md:gap-16 justify-between items-start">

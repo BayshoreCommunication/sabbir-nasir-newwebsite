@@ -58,13 +58,13 @@ const AboutSection = () => {
 
               {/* Right column - Card design (wider, being overlapped) */}
               <motion.div
-                className="md:col-span-2 bg-secondary rounded-xl shadow-lg p-2 md:p-8 pl-2 md:pl-20 border border-secondary"
+                className="md:col-span-2 bg-secondary rounded-xl shadow-lg p-4 md:p-8 pl-2 md:pl-20 border border-secondary"
                 initial={{ opacity: 0, x: 30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
               >
-                <div className="space-y-6">
+                <div className="space-y-4">
                   <motion.p
                     className=""
                     initial={{ opacity: 0 }}
@@ -104,7 +104,7 @@ const AboutSection = () => {
                   </motion.p>
 
                   <motion.div
-                    className="pt-4"
+                    className="pt-1 xl:pt-4"
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ delay: 0.6 }}

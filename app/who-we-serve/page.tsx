@@ -9,7 +9,7 @@ const page = () => {
         titleH1={`Who We Serve`}
         titleH2={"Who We Serve"}
         slug={"who-we-serve"}
-        image="/images/about-us/Frame 71.jpg"
+        image="/images/about-us/serve.jpg"
       />
       <WhoWeServe />
       <TaketheFirstStep />
