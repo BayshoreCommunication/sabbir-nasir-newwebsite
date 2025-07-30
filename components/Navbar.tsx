@@ -73,26 +73,26 @@ const Navbar: React.FC = () => {
     [pathname]
   );
 
-  // Mobile menu variants for instant responsive animations
+  // Mobile menu variants for smooth right-to-left animations
   const mobileMenuVariants = {
     closed: {
       opacity: 0,
       height: 0,
-      scale: 0.98,
+      x: "100%",
       transition: {
-        duration: 0.15,
+        duration: 0.2,
         ease: "easeInOut",
       },
     },
     open: {
       opacity: 1,
       height: "auto",
-      scale: 1,
+      x: 0,
       transition: {
-        duration: 0.25,
+        duration: 0.3,
         ease: "easeOut",
-        staggerChildren: 0.03,
-        delayChildren: 0,
+        staggerChildren: 0.05,
+        delayChildren: 0.1,
       },
     },
   };
@@ -100,18 +100,16 @@ const Navbar: React.FC = () => {
   const mobileItemVariants = {
     closed: {
       opacity: 0,
-      y: -10,
-      scale: 0.95,
+      x: 50,
       transition: {
-        duration: 0.1,
+        duration: 0.15,
       },
     },
     open: {
       opacity: 1,
-      y: 0,
-      scale: 1,
+      x: 0,
       transition: {
-        duration: 0.2,
+        duration: 0.25,
         ease: "easeOut",
       },
     },
@@ -231,16 +229,13 @@ const Navbar: React.FC = () => {
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div
-            className="xl:hidden absolute top-full w-full bg-white shadow-lg overflow-hidden z-50"
+            className="xl:hidden absolute top-full w-full bg-gray-100 backdrop-blur-sm shadow-lg overflow-hidden z-50"
             variants={mobileMenuVariants}
             initial="closed"
             animate="open"
             exit="closed"
           >
-            <motion.div
-              className="flex flex-col items-center py-6 space-y-8"
-              variants={mobileMenuVariants}
-            >
+            <motion.div className="flex flex-col items-center py-8 space-y-8">
               {menuItems.map((item, index) => (
                 <motion.div
                   key={item.slug}
