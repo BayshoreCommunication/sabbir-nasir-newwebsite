@@ -15,12 +15,12 @@ const GlobalHeroSection = ({ image, titleH1, titleH2, slug }: any) => {
           className="z-0 object-cover object-right md:object-center xl:object-top"
         />
 
-        <div className="absolute inset-0 z-20 bg-slate-100/30 xl:bg-transparent">
+        <div className="absolute inset-0 z-20  xl:bg-transparent">
           <div className="flex flex-col justify-end md:justify-center items-center h-full -ml-0 md:-ml-[30%] pb-8 md:pb-0">
             <div className="text-center md:text-left lg:text-left w-full px-4 md:px-0">
               {/* Mobile Background Blur Container */}
               <div className="md:hidden relative">
-                <div className="absolute inset-0 bg-white/80 backdrop-blur-md rounded-lg -m-4"></div>
+                <div className="absolute inset-0 bg-white/60 backdrop-blur-md rounded-lg -m-4"></div>
                 <div className="relative z-10 p-6">
                   <motion.h1
                     initial={{ opacity: 0, y: 40 }}

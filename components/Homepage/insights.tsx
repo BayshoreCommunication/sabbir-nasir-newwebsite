@@ -50,8 +50,12 @@ export default function Insights() {
               />
               <div className="flex items-center justify-between p-4 border-t border-gray-200 text-sm">
                 <span className="text-gray-600">Blog</span>
-                <span className="text-gray-600">
-                  {insight.date} {insight.month} {insight.year}
+                <span className="text-gray-600 flex items-center space-x-1">
+                  {insight.date.split(" ").map((part, index) => (
+                    <div key={index} className="flex items-center space-x-1">
+                      {part}
+                    </div>
+                  ))}
                 </span>
               </div>
               <div className="p-4">
