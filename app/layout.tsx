@@ -31,9 +31,9 @@ const lumiosMarker = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Sabbir Nasir",
+  title: "Sabbir Nasir & Associates",
   description: "Success Doesn't Happen Without Strategy",
-  metadataBase: new URL("https://sabbir-nasir.vercel.app"),
+  metadataBase: new URL("https://www.teamsabbirnasir.com"),
   alternates: {
     canonical: "/",
     languages: {
