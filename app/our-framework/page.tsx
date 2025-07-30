@@ -18,7 +18,7 @@ export default function page() {
       />
 
       <OurFramworkSection />
-      <TaketheFirstStep />
+      <TaketheFirstStep title="Take the First Step" />
     </div>
   );
 }

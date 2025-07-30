@@ -12,7 +12,7 @@ const page = () => {
         image="/images/about-us/serve.jpg"
       />
       <WhoWeServe />
-      <TaketheFirstStep />
+      <TaketheFirstStep title="Take the First Step" />
     </div>
   );
 };

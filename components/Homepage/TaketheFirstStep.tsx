@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-const TaketheFirstStep = () => {
+const TaketheFirstStep = ({ title }: { title: string }) => {
   return (
     <section
       className="relative bg-cover bg-bottom bg-no-repeat text-center py-20 xl:py-28 px-4"
@@ -23,7 +23,7 @@ const TaketheFirstStep = () => {
         className="relative z-10 max-w-3xl mx-auto text-white"
       >
         <h2 className="text-3xl md:text-5xl font-baskervville font-bold mb-6">
-          Take the First Step
+          {title}
         </h2>
 
         <p className="text-base md:text-[20px]  mb-4 leading-relaxed">

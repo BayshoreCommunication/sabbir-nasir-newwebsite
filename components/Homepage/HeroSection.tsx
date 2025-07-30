@@ -33,7 +33,12 @@ const HeroSection = () => {
                 animate={{ opacity: 1, x: 0 }}
                 whileHover={{ y: -8 }}
                 whileTap={{ scale: 0.98 }}
-                transition={{ duration: 0.5, delay: 0.1, ease: "easeInOut" }}
+                transition={{
+                  type: "spring",
+                  stiffness: 200,
+                  damping: 20,
+                  mass: 0.5,
+                }}
               >
                 <p className="text-3xl md:text-[54px] font-lumios text-primary transition-colors duration-300 ">
                   Start Breaking Through

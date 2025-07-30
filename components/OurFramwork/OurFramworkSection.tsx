@@ -39,16 +39,20 @@ const OurFramworkSection = () => {
 
         {/* Download Button */}
         <motion.div
-          className="group flex items-center justify-center xl:justify-start mt-4 xl:mt-4 pb-4 xl:pb-4 space-x-2 text-primary cursor-pointer hover:text-secondary transition-colors w-[400px]"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4 }}
-          viewport={{ once: true }}
+          className=" flex items-center justify-center xl:justify-start mt-4 xl:mt-4 pb-4 xl:pb-4 space-x-2 text-primary cursor-pointer hover:text-secondary transition-colors w-[400px]"
+          whileHover={{ y: -8 }}
+          whileTap={{ scale: 0.98 }}
+          transition={{
+            type: "spring",
+            stiffness: 200,
+            damping: 20,
+            mass: 0.5,
+          }}
         >
           <div>
-            <FiDownload className="text-2xl xl:text-3xl font-lumios text-primary group-hover:text-secondary transition-colors" />
+            <FiDownload className="text-2xl xl:text-3xl font-lumios text-primary " />
           </div>
-          <span className="text-[30px] xl:text-[40px] font-lumios group-hover:text-secondary transition-colors">
+          <span className="text-[30px] xl:text-[40px] font-lumios text-primary">
             Download The Framework
           </span>
         </motion.div>

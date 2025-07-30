@@ -107,16 +107,25 @@ const BusinessTransformationConsulting = () => {
           </span>
         </p>
 
-        <Link
-          href={"/our-framework"}
-          className="mt-2 xl:mt-6 inline-flex items-center space-x-1 text-primary hover:underline"
-        >
-          <p className="text-[30px] xl:text-[45px] font-lumios text-primary">
-            Our Framework
-          </p>
-          <div>
-            <HiArrowNarrowRight className="text-2xl xl:text-3xl font-lumios mt-1 xl:mt-2 text-primary" />
-          </div>
+        <Link href={"/our-framework"} className="mt-2 xl:mt-6 inline-flex ">
+          <motion.div
+            whileHover={{ y: -8 }}
+            whileTap={{ scale: 0.98 }}
+            transition={{
+              type: "spring",
+              stiffness: 200,
+              damping: 20,
+              mass: 0.5,
+            }}
+            className="flex items-center space-x-1 text-primary cursor-pointer"
+          >
+            <p className="text-[30px] xl:text-[45px] font-lumios text-primary">
+              Our Framework
+            </p>
+            <div>
+              <HiArrowNarrowRight className="text-2xl xl:text-3xl font-lumios mt-1 xl:mt-2 text-primary" />
+            </div>
+          </motion.div>
         </Link>
 
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-2 xl:gap-8 -mt-1 xl:-mt-8">
@@ -161,16 +170,25 @@ const BusinessTransformationConsulting = () => {
           </motion.div>
         </div>
 
-        <Link
-          href={"/who-we-serve"}
-          className="mt-2 xl:-mt-6 inline-flex items-center space-x-1 text-primary hover:underline"
-        >
-          <p className="text-[30px] xl:text-[45px] font-lumios text-primary">
-            Who We Serve
-          </p>
-          <div>
-            <HiArrowNarrowRight className="text-2xl xl:text-3xl font-lumios mt-1 xl:mt-2 text-primary" />
-          </div>
+        <Link href={"/who-we-serve"} className="mt-2 xl:-mt-6 inline-flex ">
+          <motion.div
+            whileHover={{ y: -8 }}
+            whileTap={{ scale: 0.98 }}
+            transition={{
+              type: "spring",
+              stiffness: 200,
+              damping: 20,
+              mass: 0.5,
+            }}
+            className="flex items-center space-x-1 text-primary cursor-pointer"
+          >
+            <p className="text-[30px] xl:text-[45px] font-lumios text-primary">
+              Who We Serve
+            </p>
+            <div>
+              <HiArrowNarrowRight className="text-2xl xl:text-3xl font-lumios mt-1 xl:mt-2 text-primary" />
+            </div>
+          </motion.div>
         </Link>
 
         <div className="flex flex-col lg:flex-row items-center justify-between gap-4 xl:gap-8 mt-2 xl:mt-6">
@@ -213,17 +231,25 @@ const BusinessTransformationConsulting = () => {
               investors whose successful companies have plateaued and require
             </p>
             <div className="flex justify-end">
-              {" "}
-              <Link
-                href={"/about-us"}
-                className="mt-2 inline-flex items-center justify-end space-x-1 text-primary hover:underline"
-              >
-                <div>
-                  <HiArrowNarrowRight className="text-2xl xl:text-3xl font-lumios mt-1 xl:mt-2 rotate-180" />
-                </div>
-                <p className="text-[30px] xl:text-[45px] font-lumios text-primary">
-                  Our Story
-                </p>
+              <Link href={"/about-us"} className="mt-2 inline-flex ">
+                <motion.div
+                  className="flex items-center space-x-1 text-primary cursor-pointer"
+                  whileHover={{ y: -8 }}
+                  whileTap={{ scale: 0.98 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 200,
+                    damping: 20,
+                    mass: 0.5,
+                  }}
+                >
+                  <div>
+                    <HiArrowNarrowRight className="text-2xl xl:text-3xl font-lumios mt-1 xl:mt-2 rotate-180" />
+                  </div>
+                  <p className="text-[30px] xl:text-[45px] font-lumios text-primary">
+                    Our Story
+                  </p>
+                </motion.div>
               </Link>
             </div>
           </motion.div>

@@ -35,7 +35,7 @@ const NewsSidebar = () => {
             viewport={{ once: true }}
           >
             <Image
-              src="/images/about-us/image 28 (1).png"
+              src="/images/about-us/s.nasir.png"
               alt="Sabbir Hasan Nasir"
               fill
               className="object-cover rounded-full image-right"

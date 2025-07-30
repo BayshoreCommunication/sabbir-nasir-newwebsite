@@ -12,7 +12,7 @@ const page = () => {
         image="/images/about-us/blog.jpg"
       />
       <InsightsGrid />
-      <TaketheFirstStep />
+      <TaketheFirstStep title="Take the First Step" />
     </div>
   );
 };

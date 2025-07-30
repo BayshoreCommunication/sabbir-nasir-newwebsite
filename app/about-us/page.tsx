@@ -13,7 +13,7 @@ const page = () => {
         image="/images/about-us/about-us.jpg"
       />
       <AboutSection />
-      <TaketheFirstStep />
+      <TaketheFirstStep title="Speak with Sabbir Nasir" />
     </div>
   );
 };

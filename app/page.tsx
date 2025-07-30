@@ -23,7 +23,7 @@ export default function Home() {
       <HeroSection />
       <BusinessTransformationConsulting />
       <Insights />
-      <TaketheFirstStep />
+      <TaketheFirstStep title="Take the First Step" />
     </div>
   );
 }
