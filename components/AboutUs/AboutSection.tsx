@@ -7,9 +7,9 @@ const AboutSection = () => {
   return (
     <div>
       {" "}
-      <div className="container mx-auto px-4 py-12 space-y-16">
+      <div className="container mx-auto px-4 py-12 ">
         {/* <HeroSectionTop title="WHO WE ARE" breadcrumbs={breadcrumbs} /> */}
-        <div className="main-container mx-auto px-4 py-12 space-y-16">
+        <div className="main-container mx-auto px-4 ">
           {/* About Section */}
           <section className="space-y-8">
             <motion.h2
