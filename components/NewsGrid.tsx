@@ -3,19 +3,23 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { HiArrowNarrowRight } from "react-icons/hi";
-import { insightsData } from "../config/data";
+import { newsData } from "../config/data";
 
-const InsightsGrid = () => {
+const NewsGrid = () => {
+  const handleReadMore = (url: string) => {
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
   return (
-    <div className="container my-10 md:my-20">
+    <div>
       <motion.div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        className="grid grid-cols-1 md:grid-cols-2 gap-6"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        {insightsData.map((insight, index) => (
+        {newsData?.map((insight, index) => (
           <motion.div
             key={insight.id}
             className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow duration-300 flex flex-col"
@@ -34,7 +38,7 @@ const InsightsGrid = () => {
           >
             {/* Image Container */}
             <motion.div
-              className="relative h-64 overflow-hidden"
+              className="relative h-48 overflow-hidden"
               initial={{ scale: 1.1 }}
               whileInView={{ scale: 1 }}
               transition={{
@@ -70,7 +74,7 @@ const InsightsGrid = () => {
 
             {/* Content */}
             <motion.div
-              className="p-6 flex flex-col flex-grow"
+              className="p-5 flex flex-col flex-grow"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{
@@ -80,7 +84,7 @@ const InsightsGrid = () => {
               viewport={{ once: true }}
             >
               <motion.h3
-                className="text-[24px] font-bold text-gray-800 mb-3 leading-tight"
+                className="line-clamp-2"
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
@@ -92,7 +96,7 @@ const InsightsGrid = () => {
                 {insight.title}
               </motion.h3>
               <motion.p
-                className="text-gray-600 leading-relaxed mb-4 flex-grow"
+                className="line-clamp-6 mt-2"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{
@@ -104,7 +108,7 @@ const InsightsGrid = () => {
                 {insight.description}
               </motion.p>
               <motion.div
-                className="mt-auto flex items-center space-x-1 text-primary cursor-pointer group"
+                className="flex items-center space-x-1 text-primary cursor-pointer group mt-3"
                 initial={{ opacity: 0, x: -10 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{
@@ -116,12 +120,13 @@ const InsightsGrid = () => {
                   x: 5,
                   transition: { duration: 0.2 },
                 }}
+                onClick={() => handleReadMore(insight.url)}
               >
-                <p className="text-primary font-semibold group-hover:text-primary/80 transition-colors duration-300 font-lumios">
+                <h3 className="text-primary group-hover:text-primary/80 transition-colors duration-300 font-lumios">
                   Read More
-                </p>
+                </h3>
                 <div className="group-hover:translate-x-1 transition-transform duration-300">
-                  <HiArrowNarrowRight className="text-2xl text-primary group-hover:text-primary/80" />
+                  <HiArrowNarrowRight className="text-xl text-primary group-hover:text-primary/80" />
                 </div>
               </motion.div>
             </motion.div>
@@ -132,4 +137,4 @@ const InsightsGrid = () => {
   );
 };
 
-export default InsightsGrid;
+export default NewsGrid;
